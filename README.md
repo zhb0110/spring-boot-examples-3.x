@@ -6,7 +6,7 @@
 ## Spring Boot 集成
 
 1. spring-boot-command-line-runner:项目启动时初始化资源案例
-2. **spring-boot-filter**:使用过滤器Filter和拦截器Interceptor(仅controller)
+2. **spring-boot-filter**:使用过滤器Filter(所有进容器的请求)和拦截器Interceptor(仅controller请求和静态资源)
 3. **spring-boot-scheduler**:定时任务scheduler示例
 4. spring-boot-thymeleaf:thymeleaf语法、布局使用示例
 5. spring-boot-web-thymeleaf:thymeleaf增删改查示例--
