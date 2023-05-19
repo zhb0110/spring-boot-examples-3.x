@@ -4,6 +4,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/spring-boot-filter/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-shiro-authentication/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mybatis-annotation/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-mybatis-xml/pom.xml" />
       </list>
     </option>
   </component>

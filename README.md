@@ -45,20 +45,43 @@
 
 ## Spring Boot 集成 数据中间件
 
-1. **spring-boot-mybatis**:mybatis注解、xml使用、增删改查、多数据源使用示例
-2. **spring-boot-jpa**:jpa操作，增删改查多数据源使用示例
-3. spring-boot-mapper-pagehelper:整合mybatis通用mapper和pagehelper--
-4. spring-boot-elasticsearch:全文检索引擎
-5. spring-boot-jdbctemplate:
+### mybatis 注解与xml
+
+1. **spring-boot-mybatis-annotation**:mybatis注解、增删改查
+2. **spring-boot-mybatis-annotation-mulidatasource**:mybatis注解、增删改查、多数据源使用示例
+3. **spring-boot-mybatis-annotation-mulidatasource-druid**:mybatis注解、增删改查、druid多数据源使用示例
+
+---
+
+1. **spring-boot-mybatis-xml**:mybatis xml使用、增删改查
+2. **spring-boot-mybatis-xml-mulidatasource**:mybatisxml使用、增删改查、多数据源使用示例
+
+### jpa
+
+1. **spring-boot-jpa**:jpa操作，增删改查使用示例
+2. **spring-boot-jpa-mulidatasource**:jpa操作，增删改查多数据源使用示例
+3. **spring-boot-jpa-mulidatasource-druid**:jpa操作，增删改查、druid多数据源使用示例
+
+### 其他
+
+1. spring-boot-mapper-pagehelper:整合mybatis通用mapper和pagehelper--
+2. spring-boot-elasticsearch:全文检索引擎
+3. spring-boot-jdbctemplate:
 
 ## Spring Boot 集成 文档插件
 
 1. spring-boot-openapi:
 2. spring-boot-swagger2:
 
-## Spring Boot 集成 Shiro
+## Spring Boot 集成 Shiro-shiro本身属于过滤器Filter，高于拦截器Interceptor
 
-1. **spring-boot-shiro**:
+1. **spring-boot-shiro-authentication**:shiro用户认证
+2. **spring-boot-shiro-rememberme**:shiro Remember Me记住我
+3. **spring-boot-shiro-authorization**:shiro 权限控制
+4. spring-boot-shiro-redis:shiro+redis
+5. spring-boot-shiro-ehcache:shiro+ehcache
+6. spring-boot-shiro-thymeleaf-tag:thymeleaf中使用shiro标签
+7. spring-boot-shiro-session:shiro+session在线会话管理
 2. **spring-boot-shiro-jwt**:shiro整合JWT
 
 ## Spring Boot 集成 Docker
