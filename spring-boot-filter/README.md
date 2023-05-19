@@ -1,6 +1,8 @@
 ## spring-boot-filter-interceptor
 
-本项目使用了hsqldb数据库
+1. 本项目使用了hsqldb数据库，
+   导致在根目录下生成了spring-boot-filter-hsqldb相关文件及文件夹
+2. 生成了日志文件app.log
 
 ### Filter 过滤器--启动优先，访问优先，对所有进入容器的请求起作用，且只在springboot项目中内部可以自定义排序
 
