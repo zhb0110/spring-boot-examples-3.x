@@ -9,6 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
+// TODO:@RunWith运行识别环境的，但是在idea中自动识别了，太方便，以至于可以不用
 //@RunWith(SpringRunner.class)
 @SpringBootTest
 public class UserMapperTest {
