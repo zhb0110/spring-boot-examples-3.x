@@ -2,6 +2,7 @@
 
 ## 初始化与启动
 
+数据库:spring_boot_jpa
 由于配置了：spring.jpa.properties.hibernate.hbm2ddl.auto=create
 或者这样：spring.jpa.hibernate.ddl-auto=update 可以根据实体@Entity自动创建表
 
