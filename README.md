@@ -6,7 +6,7 @@
 ## Spring Boot 集成
 
 1. spring-boot-command-line-runner:项目启动时初始化资源案例
-2. **spring-boot-filter**:使用过滤器Filter(所有进容器的请求)和拦截器Interceptor(仅controller请求和静态资源)
+2. **spring-boot-filter**:使用过滤器Filter(所有进容器的请求)和拦截器Interceptor(仅controller请求和静态资源) ✓
 3. **spring-boot-scheduler**:定时任务scheduler示例
 4. spring-boot-thymeleaf:thymeleaf语法、布局使用示例
 5. spring-boot-web-thymeleaf:thymeleaf增删改查示例--
@@ -29,14 +29,17 @@
 22. spring-boot-security:启用spring security，并配置--可用shiro替代
 23. spring-boot-webflux:
 
-## Spring Boot 集成 消息中间件
+## Spring Boot 集成 消息队列中间件
 
 1. **spring-boot-rabbitmq**:rabbitmq各种常见场景使用示例
 2. **spring-boot-kafka**:整合kafka示例
-3. **spring-boot-websocket-socketjs**:整合websocket
-4. spring-boot-rocketmq:
-5. spring-boot-activemq:artemis
-6. spring-boot-zookeeper:
+3. spring-boot-rocketmq:
+4. spring-boot-activemq:artemis
+5. spring-boot-zookeeper:
+
+## Spring Boot 集成 订阅
+
+1. **spring-boot-websocket-socketjs**:整合websocket+sockjs，限制比较大，缺stompjs ✓
 
 ## Spring Boot 集成 缓存中间件
 
@@ -47,20 +50,24 @@
 
 ### mybatis 注解与xml
 
-1. **spring-boot-mybatis-annotation**:mybatis注解、增删改查
-2. **spring-boot-mybatis-annotation-mulidatasource**:mybatis注解、增删改查、多数据源使用示例
-3. **spring-boot-mybatis-annotation-mulidatasource-druid**:mybatis注解、增删改查、druid多数据源使用示例
+1. **spring-boot-mybatis-annotation**:mybatis注解、增删改查 ✓
+2. **spring-boot-mybatis-annotation-druid**:mybatis注解、增删改查
+3. spring-boot-mybatis-annotation-mulidatasource:mybatis注解、增删改查、多数据源使用示例
+4. spring-boot-mybatis-annotation-mulidatasource-druid:mybatis注解+druid，增删改查、多数据源使用示例
 
 ---
 
-1. **spring-boot-mybatis-xml**:mybatis xml使用、增删改查
-2. **spring-boot-mybatis-xml-mulidatasource**:mybatisxml使用、增删改查、多数据源使用示例
+1. **spring-boot-mybatis-xml**:mybatis xml使用、增删改查 ✓
+2. spring-boot-mybatis-xml-druid:mybatis xml+druid 使用、增删改查
+3. spring-boot-mybatis-xml-mulidatasource:mybatis xml 使用、增删改查、多数据源使用示例 ✓
+4. spring-boot-mybatis-xml-mulidatasource-druid:mybatis xml+druid 使用、增删改查、多数据源使用示例
 
 ### jpa
 
-1. **spring-boot-jpa**:jpa操作，增删改查使用示例
-2. **spring-boot-jpa-mulidatasource**:jpa操作，增删改查多数据源使用示例
-3. **spring-boot-jpa-mulidatasource-druid**:jpa操作，增删改查、druid多数据源使用示例
+1. **spring-boot-jpa**:jpa操作，增删改查使用示例 ✓
+2. **spring-boot-jpa-druid**:jpa+druid 操作，增删改查使用示例 ✓
+2. spring-boot-jpa-mulidatasource:jpa操作，增删改查多数据源使用示例
+3. spring-boot-jpa-mulidatasource-druid:jpa+druid 操作，增删改查、多数据源使用示例
 
 ### 其他
 
@@ -73,16 +80,17 @@
 1. spring-boot-openapi:
 2. spring-boot-swagger2:
 
-## Spring Boot 集成 Shiro-shiro本身属于过滤器Filter，高于拦截器Interceptor
+## Spring Boot 集成 Shiro-shiro本身属于过滤器Filter，高于拦截器Interceptor，官方暂时没有适配SpringBooot3.X
 
-1. **spring-boot-shiro-authentication**:shiro用户认证
-2. **spring-boot-shiro-rememberme**:shiro Remember Me记住我
-3. **spring-boot-shiro-authorization**:shiro 权限控制
-4. spring-boot-shiro-redis:shiro+redis
-5. spring-boot-shiro-ehcache:shiro+ehcache
-6. spring-boot-shiro-thymeleaf-tag:thymeleaf中使用shiro标签
-7. spring-boot-shiro-session:shiro+session在线会话管理
-2. **spring-boot-shiro-jwt**:shiro整合JWT
+1. ~~**spring-boot-shiro**:shiro 基础使用,shiro目前没有适配3.x，采用springboot2.x，仅演示~~
+2. ~~**spring-boot-shiro-authentication**:shiro用户认证~~
+2. ~~**spring-boot-shiro-rememberme**:shiro Remember Me记住我~~
+3. ~~**spring-boot-shiro-authorization**:shiro 权限控制~~
+4. ~~spring-boot-shiro-redis:shiro+redis~~
+5. ~~spring-boot-shiro-ehcache:shiro+ehcache~~
+6. ~~spring-boot-shiro-thymeleaf-tag:thymeleaf中使用shiro标签~~
+7. ~~spring-boot-shiro-session:shiro+session在线会话管理~~
+2. ~~**spring-boot-shiro-jwt**:shiro整合JWT~~
 
 ## Spring Boot 集成 Docker
 
@@ -107,31 +115,6 @@
 2. spring-jms:
 3. spring-scheduler:
 4. spring-jmx:
-
-## Spring Boot 综合
-
-1. demo:快速入门-加了Spring Web:使用 Spring MVC 构建 Web，包括 RESTful，应用程序。使用 Apache Tomcat 作为默认的嵌入式容器。
-2. spring-boot:尝试使用 Spring Boot 构建应用程序-包括单元测试@Test，生产级服务(spring-boot-starter-actuator)
-   ，打包，关键是启动器和加载bean
-3. rest-service:尝试构建一个 RESTful Web 服务。JSON 表示形式进行响应(默认使用jackson)，创建资源类(实体)、控制器类，并打包jar
-4. accessing-data-jpa:JPA+H2。使用JPA访问数据，简单实体(@Entity,@Id/@GeneratedValue(strategy=GenerationType.AUTO))
-   ，简单查询类(CrudRepository)，应用程序类(@Bean，CommandLineRunner，org.slf4j.LoggerFactory)
-   ，启动时启动器-加载bean，直接在命令行执行并日志输出H2库中的操作数据
-5. springRedis:基础Redis。加了Spring Data Redis和Lombok，配置了application.yml，就做了测试@Test
-6. springDataReactiveRedis:使用 Redis 以反应方式访问数据。应用程序使用 Spring Data Redis 和 Project Reactor 与 Redis
-   数据存储进行交互，在不阻塞的情况下存储和检索对象。Spring Reactive Web，Spring Data Reactive
-   Redis和Lombok。注意如果改动了redis密码，需要在application中加redis的密码
-7. messaging-redis:使用 Redis 发送消息。使用 Spring Data Redis 发布和订阅使用 Redis 发送的消息的过程，比较奇葩的需求
-8. securing-web:使用受 Spring security保护的资源创建简单 Web 应用程序的过程。构建一个Spring
-   MVC应用程序，该应用程序使用由固定用户列表支持的登录表单来保护页面。“依赖项”：“Spring
-   Web”和“Thymeleaf”，实用型比较强，加入了spring-boot-starter-security和spring-security-test，注意模板引擎的模板文件(
-   类似JSP)都是放在resources/templates下
-9. accessing-data-mysql:JPA+Mysql。'@Controller,@Repository(Dao)，@Entity，挺实用的，三种依赖Spring Web，Spring Data
-   JPA和MySQL驱动程序。spring.jpa.hibernate.ddl-auto生产环境为none，开发环境为update，数据库为：db_example
-10. mybatis-sample:Mybatis+H2。'不需要@Entity，@Repository(Dao)->@Mapper，需要@Controller，实用，两种依赖MyBatis Framework，H2
-    Database；演示springboot启动项目执行sql逻辑，schema.sql/data.sql；@Test执行：测试执行能看到执行的文件不一样，其他都和正常启动差不多
-11. mybatis-mysql:Mybatis+Mysql。'不需要@Entity，@Repository(Dao)->@Mapper，需要@Controller，实用，两种依赖MyBatis
-    Framework，Mysql驱动；演示springboot启动项目执行sql逻辑，schema.sql/data.sql；@Test执行：测试执行能看到执行的文件不一样，其他都和正常启动差不多；难点在mysql不是内存数据库，无法默认初始化执行sql，springboot2.7+版本需配置spring.sql.init.mode=always
 
 
 
