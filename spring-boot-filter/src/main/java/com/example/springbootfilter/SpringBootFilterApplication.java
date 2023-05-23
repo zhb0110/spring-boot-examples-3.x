@@ -17,6 +17,7 @@ public class SpringBootFilterApplication {
 
     // -- Spring Mvc configuration
     // 拦截器Interceptor，仅拦截Controller ---------------------------------------------------
+    // TODO:这种写法太死板，推荐看spring-boot-2.x中的spring-boot-jwt中的写法
     @Bean
     WebMvcConfigurer createWebMvcConfigurer(@Autowired HandlerInterceptor[] interceptors) {
         return new WebMvcConfigurer() {
