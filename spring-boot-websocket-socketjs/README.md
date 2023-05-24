@@ -9,4 +9,4 @@ registry.addHandler(myStringWebSocketHandler, "/connect").withSockJS();
 
 ## 后续
 
-本文还可以再继续挖掘，比如：多端订阅如何验证，如何和stompjs一起使用
+本文还可以继续挖掘，使用普通ws url连接怎么连？
