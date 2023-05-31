@@ -1,0 +1,14 @@
+- | [] | [20230531 22:51:27.769] | [INFO] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication] | --> Starting SpringBootLogApplication using Java 17.0.1 with PID 36588 (D:\WorkSoft\IdeaTestProjects\spring-boot-examples-3.x\spring-boot-log\target\classes started by 10107 in D:\WorkSoft\IdeaTestProjects\spring-boot-examples-3.x)|
+- | [] | [20230531 22:51:27.775] | [DEBUG] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication] | --> Running with Spring Boot v3.0.7, Spring v6.0.9|
+- | [] | [20230531 22:51:27.777] | [INFO] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication] | --> No active profile set, falling back to 1 default profile: "default"|
+- | [] | [20230531 22:51:29.026] | [INFO] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication$$SpringCGLIB$$0] | --> test|
+- | [] | [20230531 22:51:29.274] | [INFO] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication] | --> Started SpringBootLogApplication in 2.618 seconds (process running for 5.218)|
+- | [] | [20230531 22:53:20.986] | [INFO] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication] | --> Starting SpringBootLogApplication using Java 17.0.1 with PID 37264 (D:\WorkSoft\IdeaTestProjects\spring-boot-examples-3.x\spring-boot-log\target\classes started by 10107 in D:\WorkSoft\IdeaTestProjects\spring-boot-examples-3.x)|
+- | [] | [20230531 22:53:20.989] | [DEBUG] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication] | --> Running with Spring Boot v3.0.7, Spring v6.0.9|
+- | [] | [20230531 22:53:20.990] | [INFO] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication] | --> No active profile set, falling back to 1 default profile: "default"|
+- | [] | [20230531 22:53:21.504] | [INFO] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication] | --> -------哈哈---------|
+- | [] | [20230531 22:53:21.611] | [INFO] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication] | --> Started SpringBootLogApplication in 1.251 seconds (process running for 3.0)|
+- | [] | [20230531 22:53:21.618] | [DEBUG] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication] | --> print log, current level: debug|
+- | [] | [20230531 22:53:21.619] | [INFO] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication] | --> print log, current level: info|
+- | [] | [20230531 22:53:21.619] | [WARN] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication] | --> print log, current level: warn|
+- | [] | [20230531 22:53:21.619] | [ERROR] | [zhb-developer] | [restartedMain] | [c.e.s.SpringBootLogApplication] | --> print log, current level: error|

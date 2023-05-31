@@ -1,0 +1,11 @@
+logging:
+  level:
+    root: debug
+  file:
+    path: D:/WorkSoft/IdeaTestProjects/spring-boot-examples-3.x/spring-boot-log/logs
+server:
+  port: 8080
+spring:
+  application:
+    name: spring-boot-log
+debug: false
