@@ -1,0 +1,11 @@
+spring:
+  kafka:
+    bootstrap-servers: localhost:9092
+    consumer:
+      # TODO:group-id将消费者进行分组（你也可以不进行分组）
+      group-id: test-consumer
+      #      消息读取策略:当各分区下有已提交的offset时，从提交的offset开始消费；无提交的offset时，消费新产生的该分区下的数据
+      auto-offset-reset: latest
+      #      一次最多抓取100条消息
+      max-poll-records: 100
+      max-partition-fetch-bytes: 1000000
