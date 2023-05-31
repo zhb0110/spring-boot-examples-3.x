@@ -50,6 +50,7 @@ public class UserController {
     public ModelAndView doRegister(@RequestParam("email") String email, @RequestParam("password") String password, @RequestParam("name") String name) {
         try {
             User user = userService.register(email, password, name);
+            // 生成日志，并存放到日志文件
             logger.info("user registered: {}", user.getEmail());
         } catch (RuntimeException e) {
             return new ModelAndView("register.html", Map.of("email", email, "error", "Register failed"));
