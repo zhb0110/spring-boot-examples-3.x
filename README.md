@@ -32,7 +32,7 @@
 ## Spring Boot 集成 消息队列中间件
 
 1. **spring-boot-rabbitmq**:rabbitmq各种常见场景使用示例 ✓
-2. **spring-boot-kafka**:整合kafka示例
+2. **spring-boot-kafka**:整合kafka示例 ✓
 3. spring-boot-rocketmq:阿里的消息队列
 4. spring-boot-activemq:artemis，apache老牌消息队列
 5. spring-boot-zookeeper:
