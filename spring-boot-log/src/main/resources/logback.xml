@@ -8,7 +8,7 @@
     <!--  spring属性 开始 -->
     <!-- 日志根目录-->
     <springProperty scope="context" name="LOG_HOME" source="logging.file.path"
-                    defaultValue="/data/logs/springboot-logback-demo"/>
+                    defaultValue="D:/WorkSoft/IdeaTestProjects/spring-boot-examples-3.x/spring-boot-log/logs"/>
 
     <!-- TODO:常用，日志级别 -->
     <springProperty scope="context" name="LOG_ROOT_LEVEL" source="logging.level.root" defaultValue="DEBUG"/>
