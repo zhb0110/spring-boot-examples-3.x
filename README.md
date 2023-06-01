@@ -7,35 +7,37 @@
 
 1. spring-boot-command-line-runner:项目启动时初始化资源案例
 2. **spring-boot-filter**:使用过滤器Filter(所有进容器的请求)和拦截器Interceptor(仅controller请求和静态资源) ✓
-3. **spring-boot-scheduler**:定时任务scheduler示例
-4. spring-boot-thymeleaf:thymeleaf语法、布局使用示例
-5. spring-boot-web-thymeleaf:thymeleaf增删改查示例--
-6. spring-boot-package:单元测试、集成测试、打jar/war包、定制启动参数使用案例
-7. spring-boot-file-upload:上传文件使用案例
-8. spring-boot-jpa-thymeleaf-curd:jpa thymeleaf列表、增删改查使用案例
-9. spring-boot-mail:邮件发送使用示例
-10. spring-boot-mongodb:mongodb增删改查示例 多数据源使用案例
-11. spring-boot-memcached-spymemcached:集成memcached使用案例
-12. **spring-boot-aop-log**:AOP记录用户操作日志
-13. spring-boot-jackson:
-14. spring-boot-testing:编写单元测试
-15. spring-boot-actuator:监控应用
-16. spring-boot-admin:admin监控服务
-17. spring-boot-devtools:devtools开发工具，并且能热部署
-18. spring-boot-exception:异常处理
-19. spring-boot-eureka-server-discovery:eureka服务治理-
-20. spring-boot-hystrix:Hystrix服务--
-21. spring-boot-feign:feign声明式服务调用--
-22. spring-boot-security:启用spring security，并配置--可用shiro替代
-23. spring-boot-webflux:
+3. **spring-boot-scheduler-tasks**:定时任务scheduler示例，包含：注解@Scheduled/java原生:ScheduledExecutorService/Timer ✓
+4. **spring-boot-scheduler-quartz**:定时任务quartz示例 ✓
+5. spring-boot-thymeleaf:thymeleaf语法、布局使用示例
+6. spring-boot-web-thymeleaf:thymeleaf增删改查示例--
+7. spring-boot-package:单元测试、集成测试、打jar/war包、定制启动参数使用案例
+8. spring-boot-file-upload:上传文件使用案例
+9. spring-boot-jpa-thymeleaf-curd:jpa thymeleaf列表、增删改查使用案例
+10. spring-boot-mail:邮件发送使用示例
+11. spring-boot-mongodb:mongodb增删改查示例 多数据源使用案例
+12. spring-boot-memcached-spymemcached:集成memcached使用案例
+13. spring-boot-aop-log:AOP记录用户操作日志
+14. **spring-boot-log**:采用slf4j日志门面(其他common-logging)+logback日志系统(其他log4j,log4j2,java.util.logging)
+15. spring-boot-jackson:
+16. spring-boot-testing:编写单元测试
+17. spring-boot-actuator:监控应用
+18. spring-boot-admin:admin监控服务
+19. spring-boot-devtools:devtools开发工具，并且能热部署
+20. spring-boot-exception:异常处理
+21. spring-boot-eureka-server-discovery:eureka服务治理-
+22. spring-boot-hystrix:Hystrix服务--
+23. spring-boot-feign:feign声明式服务调用--
+24. spring-boot-security:启用spring security，并配置--可用shiro替代
+25. spring-boot-webflux:
 
 ## Spring Boot 集成 消息队列中间件
 
 1. **spring-boot-rabbitmq**:rabbitmq各种常见场景使用示例 ✓
-2. **spring-boot-kafka**:整合kafka示例 ✓
+2. **spring-boot-kafka**:整合kafka示例，集成了zookeeper ✓
 3. spring-boot-rocketmq:阿里的消息队列
 4. spring-boot-activemq:artemis，apache老牌消息队列
-5. spring-boot-zookeeper:
+5. spring-boot-zookeeper:一个为分布式应用提供一致性服务的软件
 
 ## Spring Boot 集成 订阅
 
