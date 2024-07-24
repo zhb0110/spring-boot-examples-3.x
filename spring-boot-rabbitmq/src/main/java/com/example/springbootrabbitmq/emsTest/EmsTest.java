@@ -26,15 +26,15 @@ public class EmsTest implements ApplicationRunner {
     public void run(ApplicationArguments args) throws Exception {
         rabbitTemplate.setReplyTimeout(10000);
 
-        for (int i = 0; i < 10; i++) {
-            List<String> phoneNumbers = (List<String>) rabbitTemplate.convertSendAndReceive("smsExchange", "sms", 3831);
-            System.out.println("电话号码：" + phoneNumbers.toString());
-        }
-
-        EmsTest.getxx();
+//        for (int i = 0; i < 10; i++) {
+//            List<String> phoneNumbers = (List<String>) rabbitTemplate.convertSendAndReceive("smsExchange", "sms", 3831);
+//            System.out.println("电话号码：" + phoneNumbers.toString());
+//        }
+//
+//        EmsTest.getxx();
         System.out.println("结束1" );
-        Thread xx= new ThreadX();
-        xx.start();
+//        Thread xx= new ThreadX();
+//        xx.start();
 
         System.out.println("结束" );
 
